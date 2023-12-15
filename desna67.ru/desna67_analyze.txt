@@ -1,0 +1,25 @@
+2023-12-13 20:29:06,571 - root - DEBUG - Preparing desna67.ru.warc
+2023-12-13 20:29:15,617 - root - INFO - Processed 10000 records
+2023-12-13 20:29:22,727 - root - INFO - Processed 20000 records
+
+mimes                            files        size          share
+-----------------------------  -------  ----------  -------------
+image/jpeg                        7942  1487968497   68.2394
+text/html                        12323   427705404   19.6149
+image/png                          425   154894572    7.10358
+video/mp4                            2    76002410    3.48553
+image/tiff                           3    10550377    0.483848
+application/rss+xml               1362     7198346    0.330122
+application/json                  1712     5824960    0.267137
+text/xml                          1301     5666853    0.259886
+image/svg+xml                        4     1678376    0.0769716
+application/x-javascript            19     1216629    0.0557955
+text/css                            15      544804    0.0249851
+application/vnd.ms-fontobject        4      402406    0.0184546
+application/x-font-ttf               4      401316    0.0184047
+application/x-font-woff              3      203415    0.00932877
+                                     3      164497    0.00754396
+image/gif                            3       87932    0.00403263
+application/xml                      1        1350    6.1912e-05
+text/plain                           2         628    2.88006e-05
+#total                           25128  2180512772  100
