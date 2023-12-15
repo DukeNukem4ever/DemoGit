@@ -1,0 +1,20 @@
+2023-12-14 00:38:37,448 - root - DEBUG - Preparing gazeta-kardymovo.ru.warc
+2023-12-14 00:38:42,830 - root - INFO - Processed 10000 records
+2023-12-14 00:38:48,973 - root - INFO - Processed 20000 records
+mimes                                                                      files        size          share
+-----------------------------------------------------------------------  -------  ----------  -------------
+image/jpeg                                                                 11414  1203676891   79.2789
+text/html                                                                   7494   196823923   12.9636
+image/png                                                                    216    69330569    4.56638
+application/rss+xml                                                         2046    31083777    2.0473
+application/json                                                            1792     6083837    0.400705
+text/xml                                                                    1383     5928560    0.390478
+application/pdf                                                                2     2242365    0.147691
+image/svg+xml                                                                  3     1358886    0.0895016
+application/octet-stream                                                       9      626043    0.0412336
+application/vnd.openxmlformats-officedocument.wordprocessingml.document        8      430536    0.0283568
+application/vnd.ms-fontobject                                                  3      317642    0.0209211
+application/x-javascript                                                      10      197008    0.0129757
+text/css                                                                       5      181321    0.0119425
+text/plain                                                                     2         706    4.64999e-05
+#total                                                                     24387  1518282064  100

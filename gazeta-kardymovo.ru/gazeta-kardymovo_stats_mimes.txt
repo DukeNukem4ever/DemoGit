@@ -1,0 +1,20 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ mime                                                                    ┃ size       ┃ count ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│ application/json; charset=UTF-8                                         │ 6083837    │  1792 │
+│ application/octet-stream                                                │ 626043     │     9 │
+│ application/pdf                                                         │ 2242365    │     2 │
+│ application/rss+xml; charset=UTF-8                                      │ 31083777   │  2046 │
+│ application/vnd.ms-fontobject                                           │ 317642     │     3 │
+│ application/vnd.openxmlformats-officedocument.wordprocessingml.document │ 430536     │     8 │
+│ application/x-javascript                                                │ 197008     │    10 │
+│ image/jpeg                                                              │ 1203676891 │ 11414 │
+│ image/png                                                               │ 69330569   │   216 │
+│ image/svg+xml                                                           │ 1358886    │     3 │
+│ text/css                                                                │ 181321     │     5 │
+│ text/html; charset=UTF-8                                                │ 196823923  │  7494 │
+│ text/plain                                                              │ 280        │     1 │
+│ text/plain; charset=utf-8                                               │ 426        │     1 │
+│ text/xml                                                                │ 1335       │     1 │
+│ text/xml; charset=UTF-8                                                 │ 5927225    │  1382 │
+└─────────────────────────────────────────────────────────────────────────┴────────────┴───────┘
