@@ -1,0 +1,22 @@
+2023-12-13 22:47:08,043 - root - DEBUG - Preparing zn-smol.ru.warc
+2023-12-13 22:47:22,257 - root - INFO - Processed 10000 records
+mimes                            files        size          share
+-----------------------------  -------  ----------  -------------
+image/jpeg                        4852   949548065   48.4981
+application/zip                     35   412813230   21.0844
+application/x-rar-compressed        50   370104513   18.9031
+text/html                         4908   180827436    9.23576
+image/png                           59    24661802    1.2596
+application/octet-stream            87    14651315    0.748316
+image/svg+xml                        8     1961457    0.100181
+image/gif                            9     1613977    0.0824338
+text/xml                             4      466251    0.0238138
+application/vnd.ms-fontobject        4      374736    0.0191396
+application/javascript              22      318032    0.0162435
+font/woff                            4      210801    0.0107667
+text/css                            11      181063    0.00924779
+font/woff2                           3      169364    0.00865026
+application/json                     5        1710    8.73382e-05
+image/x-icon                         1        1528    7.80426e-05
+text/plain                           1         524    2.67633e-05
+#total                           10063  1957905804  100

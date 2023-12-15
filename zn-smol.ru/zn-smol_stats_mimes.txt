@@ -1,0 +1,25 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┓
+┃ mime                          ┃ size      ┃ count ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━┩
+│ application/javascript        │ 318032    │    22 │
+│ application/json              │ 1710      │     5 │
+│ application/octet-stream      │ 14651315  │    87 │
+│ application/vnd.ms-fontobject │ 374736    │     4 │
+│ application/x-rar-compressed  │ 370104513 │    50 │
+│ application/zip               │ 412813230 │    35 │
+│ font/woff                     │ 210801    │     4 │
+│ font/woff2                    │ 169364    │     3 │
+│ image/gif                     │ 1613977   │     9 │
+│ image/jpeg                    │ 949548065 │  4852 │
+│ image/png                     │ 24661802  │    59 │
+│ image/svg+xml                 │ 1961457   │     8 │
+│ image/x-icon                  │ 1528      │     1 │
+│ text/css                      │ 123775    │     8 │
+│ text/css;;charset=UTF-8       │ 57288     │     3 │
+│ text/html                     │ 704899    │  1879 │
+│ text/html; charset=UTF-8      │ 180118785 │  3020 │
+│ text/html; charset=iso-8859-1 │ 3752      │     9 │
+│ text/plain                    │ 524       │     1 │
+│ text/xml                      │ 465363    │     3 │
+│ text/xml;charset=utf-8        │ 888       │     1 │
+└───────────────────────────────┴───────────┴───────┘
