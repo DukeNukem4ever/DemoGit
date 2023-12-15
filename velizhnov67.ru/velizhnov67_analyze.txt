@@ -1,0 +1,23 @@
+2023-12-13 21:20:03,872 - root - DEBUG - Preparing velizhnov67.ru.warc
+2023-12-13 21:20:10,125 - root - INFO - Processed 10000 records
+
+mimes                                                                      files       size          share
+-----------------------------------------------------------------------  -------  ---------  -------------
+image/jpeg                                                                  4078  529497391   67.1686
+text/html                                                                   2878  153813158   19.5117
+image/png                                                                    199   53049979    6.72958
+application/json                                                            2831   20242436    2.56782
+video/mp4                                                                      1   16785642    2.12932
+application/rss+xml                                                          745    4835864    0.613446
+text/xml                                                                     655    3040523    0.385701
+image/svg+xml                                                                  8    1995056    0.25308
+image/webp                                                                    26    1189941    0.150948
+application/octet-stream                                                      19    1090327    0.138312
+application/vnd.ms-fontobject                                                 11     835665    0.106007
+image/tiff                                                                     1     706425    0.0896125
+application/pdf                                                                3     589102    0.0747297
+application/x-javascript                                                       9     320958    0.0407147
+text/css                                                                       4     300824    0.0381606
+application/vnd.openxmlformats-officedocument.wordprocessingml.document        1      16821    0.0021338
+text/plain                                                                     2        707    8.96854e-05
+#total                                                                     11471  788310819  100

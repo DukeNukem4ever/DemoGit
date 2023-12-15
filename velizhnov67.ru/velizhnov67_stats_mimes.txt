@@ -1,0 +1,23 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┓
+┃ mime                                                                    ┃ size      ┃ count ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━┩
+│ application/json; charset=UTF-8                                         │ 20242436  │  2831 │
+│ application/octet-stream                                                │ 1090327   │    19 │
+│ application/pdf                                                         │ 589102    │     3 │
+│ application/rss+xml; charset=UTF-8                                      │ 4835864   │   745 │
+│ application/vnd.ms-fontobject                                           │ 835665    │    11 │
+│ application/vnd.openxmlformats-officedocument.wordprocessingml.document │ 16821     │     1 │
+│ application/x-javascript                                                │ 320958    │     9 │
+│ image/jpeg                                                              │ 529497391 │  4078 │
+│ image/png                                                               │ 53049979  │   199 │
+│ image/svg+xml                                                           │ 1995056   │     8 │
+│ image/tiff                                                              │ 706425    │     1 │
+│ image/webp                                                              │ 1189941   │    26 │
+│ text/css                                                                │ 300824    │     4 │
+│ text/html; charset=UTF-8                                                │ 153813158 │  2878 │
+│ text/plain                                                              │ 280       │     1 │
+│ text/plain; charset=utf-8                                               │ 427       │     1 │
+│ text/xml                                                                │ 1334      │     1 │
+│ text/xml; charset=UTF-8                                                 │ 3039189   │   654 │
+│ video/mp4                                                               │ 16785642  │     1 │
+└─────────────────────────────────────────────────────────────────────────┴───────────┴───────┘
