@@ -1,0 +1,22 @@
+2023-12-14 00:59:38,598 - root - DEBUG - Preparing gagarin-gazeta.ru.warc
+2023-12-14 00:59:42,911 - root - INFO - Processed 10000 records
+2023-12-14 00:59:48,773 - root - INFO - Processed 20000 records
+mimes                            files        size          share
+-----------------------------  -------  ----------  -------------
+image/jpeg                        4042   824761189   46.3583
+text/html                        17033   818961929   46.0323
+image/png                          229    92182699    5.18141
+application/json                  2600    27524738    1.54711
+text/xml                          2416     8520632    0.478929
+application/rss+xml               1352     5557314    0.312366
+application/pdf                      1      584882    0.0328751
+application/javascript              18      412250    0.0231718
+image/svg+xml                        1      202392    0.0113761
+text/css                             6      110117    0.00618947
+font/ttf                             1       80895    0.00454695
+application/msword                   1       79096    0.00444584
+application/vnd.ms-fontobject        2       76936    0.00432443
+font/woff                            1       44670    0.00251082
+image/gif                            6        2577    0.000144848
+text/plain                           2         629    3.53549e-05
+#total                           27711  1779102945  100

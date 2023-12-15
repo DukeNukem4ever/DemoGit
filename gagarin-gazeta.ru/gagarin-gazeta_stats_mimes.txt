@@ -1,0 +1,26 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┓
+┃ mime                               ┃ size      ┃ count ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━┩
+│ application/javascript             │ 412250    │    18 │
+│ application/json; charset=UTF-8    │ 27524738  │  2600 │
+│ application/msword                 │ 79096     │     1 │
+│ application/pdf                    │ 584882    │     1 │
+│ application/rss+xml; charset=UTF-8 │ 5557314   │  1352 │
+│ application/vnd.ms-fontobject      │ 76936     │     2 │
+│ font/ttf                           │ 80895     │     1 │
+│ font/woff                          │ 44670     │     1 │
+│ image/gif                          │ 2577      │     6 │
+│ image/jpeg                         │ 824761189 │  4042 │
+│ image/png                          │ 92182699  │   229 │
+│ image/svg+xml                      │ 202392    │     1 │
+│ text/css                           │ 110117    │     6 │
+│ text/html                          │ 604       │     2 │
+│ text/html; charset=UTF-8           │ 818911485 │ 17026 │
+│ text/html; charset=utf-8           │ 48964     │     1 │
+│ text/html; charset=windows-1251    │ 876       │     4 │
+│ text/plain; charset=utf-8          │ 409       │     1 │
+│ text/plain;charset=windows-1251    │ 220       │     1 │
+│ text/xml                           │ 1285      │     1 │
+│ text/xml; charset=UTF-8            │ 4559784   │  1096 │
+│ text/xml; charset=utf-8            │ 3959563   │  1319 │
+└────────────────────────────────────┴───────────┴───────┘
