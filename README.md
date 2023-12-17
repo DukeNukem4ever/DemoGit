@@ -37,23 +37,23 @@
 
 | Ссылка | Название | Регион | Пример страницы | Вес	| Полностью загружено? |
 | ----------- | ----------- | ----------- | ----------- |----------- |----------- |
-| [www.gagarin-gazeta.ru/](www.gagarin-gazeta.ru/)      | "ГЖАТСКИЙ ВЕСТНИК" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/508d40b7-9bc9-4b54-a872-5f490789c31b) | 1.82 ГБ | Нет |
-| [www.zn-smol.ru/](www.zn-smol.ru/)                    | "ЗНАМЯ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/a606ceaf-e782-482d-bca0-fe16f9d0b8a2) | 1.97 ГБ | Нет |
-| [www.gazeta-kardymovo.ru/](www.gazeta-kardymovo.ru/)  | "ЗНАМЯ ТРУДА" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/59f258e7-697e-4c41-b605-0862a67e1705) | 1.55 ГБ | Нет |
-| [www.za-urozhai.ru/](www.za-urozhai.ru/)              | "ЗА УРОЖАЙ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/14865d98-c3ce-46e8-93c8-d832b347010a) | 1.3 ГБ | Нет |
-| [www.desna67.ru/](www.desna67.ru/)                    | «ДЕСНА» | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/16e1a240-036c-48b3-add7-df90872e28dd) | 2.22 ГБ | Да |
-| [www.velizhnov67.ru/](www.velizhnov67.ru/)            | "ВЕЛИЖСКАЯ НОВЬ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/dbe820db-3812-491e-8bbf-8e17c6b66b12) | 809.3 ГБ | Нет |
+| www.gagarin-gazeta.ru/    | "ГЖАТСКИЙ ВЕСТНИК" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/508d40b7-9bc9-4b54-a872-5f490789c31b) | 1.82 ГБ | Нет |
+| www.zn-smol.ru/           | "ЗНАМЯ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/a606ceaf-e782-482d-bca0-fe16f9d0b8a2) | 1.97 ГБ | Нет |
+| www.gazeta-kardymovo.ru/  | "ЗНАМЯ ТРУДА" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/59f258e7-697e-4c41-b605-0862a67e1705) | 1.55 ГБ | Нет |
+| www.za-urozhai.ru/        | "ЗА УРОЖАЙ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/14865d98-c3ce-46e8-93c8-d832b347010a) | 1.3 ГБ | Нет |
+| www.desna67.ru/           | «ДЕСНА» | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/16e1a240-036c-48b3-add7-df90872e28dd) | 2.22 ГБ | Да |
+| www.velizhnov67.ru/       | "ВЕЛИЖСКАЯ НОВЬ" | Гагаринский район | ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/dbe820db-3812-491e-8bbf-8e17c6b66b12) | 809.3 ГБ | Нет |
 
 ### 4.3. Анализ через ArchiveReady
 
 | Website | Accessibility | Cohesion | Metadata | Standards Compliance | Overall rating |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| desna67.ru | 48% | 97% | 80% | 60% | 71% |
-| velizhnov67.ru | 59% | 90% | 75% | 82% | 76% |
-| zn-smol.ru | X | X | X | X | X |
-| gazeta-kardymovo.ru | 53% | 92% | 80% | 81% | 76% |
-| gagarin-gazeta.ru | 70% | 94% | 75% | 87% | 82% |
-| za-urozhai.ru | 60% | 95% | 75% | 86% | 79% |
+| www.desna67.ru | 48% | 97% | 80% | 60% | 71% |
+| www.velizhnov67.ru | 59% | 90% | 75% | 82% | 76% |
+| www.zn-smol.ru | X | X | X | X | X |
+| www.gazeta-kardymovo.ru | 53% | 92% | 80% | 81% | 76% |
+| www.gagarin-gazeta.ru | 70% | 94% | 75% | 87% | 82% |
+| www.za-urozhai.ru | 60% | 95% | 75% | 86% | 79% |
 
 Сайт zn-smol.ru не был распознан ArchiveReady.
     
