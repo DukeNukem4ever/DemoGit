@@ -88,7 +88,7 @@
 | text/xml; charset=UTF-8            | 4559784   |  1096 |
 | text/xml; charset=utf-8            | 3959563   |  1319 |
 
-## 4. Анализ через wpull
+## 4. Анализ через *wpull*
 
 `wpull http://gagarin-gazeta.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a gagarin-gazeta.ru/gagarin-gazeta.ru.log --database gagarin-gazeta.ru/sitearchive-gagarin-gazeta.ru.db --warc-file "gagarin-gazeta.ru/gagarin-gazeta.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains gagarin-gazeta.ru --concurrent 4`
 
