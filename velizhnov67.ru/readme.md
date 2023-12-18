@@ -12,7 +12,7 @@
 
 * *velizhnov67_analyze.txt* (файл, полученный в результате команды `metawarc analyze velizhnov67.ru.warc`)
 
-* *velizhnov67_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o velizhnov67.jsonl velizhnov67.ru.warc`)
+* *velizhnov67_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o velizhnov67.jsonl velizhnov67.ru.warc`)
 
 * *velizhnov67_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output velizhnov67_metadata.jsonl velizhnov67.ru.warc`)
 
