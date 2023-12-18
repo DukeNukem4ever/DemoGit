@@ -8,9 +8,23 @@
 
 ![ArchiveReady_Gazeta_Kardymovo](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/542212c2-c567-4aba-a65a-19dace6b2fa4)
 
-### 3. Характеристики по данным *metawarc*
+### 3. Список файлов в папке:
 
-#### 3.1. Код, который был нужен для реализации функций по metawarc
+* *gazeta-kardymovo_analyze.txt* (файл, полученный в результате команды `metawarc analyze gazeta-kardymovo.ru.warc`)
+
+* *gazeta-kardymovo_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o gazeta-kardymovo.jsonl gazeta-kardymovo.ru.warc`)
+
+* *gazeta-kardymovo_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output gazeta-kardymovo_metadata.jsonl gazeta-kardymovo.ru.warc`)
+
+* *gazeta-kardymovo_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *gazeta-kardymovo_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index gazeta-kardymovo.ru.warc`)
+
+### 4. Характеристики по *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по metawarc
 
 `metawarc metadata gazeta-kardymovo.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -24,9 +38,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension | size       | count |
 |-----------|------------|-------|
@@ -47,7 +61,7 @@
 | woff2     | 138903     |     3 |
 | xml       | 15184      |     2 |
 
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                                                                    | size       | count |
 |-------------------------------------------------------------------------|------------|-------|
@@ -68,11 +82,11 @@
 | text/xml                                                                | 1335       |     1 |
 | text/xml; charset=UTF-8                                                 | 5927225    |  1382 |
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://gazeta-kardymovo.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a gazeta-kardymovo.ru/gazeta-kardymovo.ru.log --database gazeta-kardymovo.ru/sitearchive-gazeta-kardymovo.ru.db --warc-file "gazeta-kardymovo.ru/gazeta-kardymovo.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains gazeta-kardymovo.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится больше всего изображений в форматах jpg, jpeg и png, если не включать файлы с пустым расширением.
 
