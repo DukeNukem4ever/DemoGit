@@ -7,9 +7,23 @@
 ### 2. Характеристики по данным *ArchiveReady*
 ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/6981c6d0-c91b-4b66-8ebd-3007bb7f0aee)
 
-### 3. Характеристики по *metawarc*
+### 3. Список файлов в папке:
 
-#### 3.1. Код, который был нужен для реализации функций по *metawarc*
+* *gagarin-gazeta_analyze.txt* (файл, полученный в результате команды `metawarc analyze gagarin-gazeta.ru.warc`)
+
+* *gagarin-gazeta_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o gagarin-gazeta.jsonl gagarin-gazeta.ru.warc`)
+
+* *gagarin-gazeta_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output gagarin-gazeta_metadata.jsonl gagarin-gazeta.ru.warc`)
+
+* *gagarin-gazeta_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *gagarin-gazeta_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index gagarin-gazeta.ru.warc`)
+
+### 4. Характеристики по *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по *metawarc*
 
 `metawarc metadata gagarin-gazeta.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -23,9 +37,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension         | size      | count |
 |-------------------|-----------|-------|
@@ -61,7 +75,7 @@
 | xml               | 3960848   |  1320 |
 | zip               | 42814     |     1 |
 
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                               | size      | count |
 |------------------------------------|-----------|-------|
@@ -88,11 +102,11 @@
 | text/xml; charset=UTF-8            | 4559784   |  1096 |
 | text/xml; charset=utf-8            | 3959563   |  1319 |
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://gagarin-gazeta.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a gagarin-gazeta.ru/gagarin-gazeta.ru.log --database gagarin-gazeta.ru/sitearchive-gagarin-gazeta.ru.db --warc-file "gagarin-gazeta.ru/gagarin-gazeta.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains gagarin-gazeta.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится очень много файлов формата jpg и xml. 
 
