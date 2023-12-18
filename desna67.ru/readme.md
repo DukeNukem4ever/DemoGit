@@ -8,11 +8,25 @@
 
 ![ArchiveReady_Desna_67](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/d720e486-5ccb-493b-a5b5-ce604530d3cf)
 
-### 3. Характеристики по данным *metawarc*
+### 3. Список файлов в репозитории:
 
-#### 3.1. Код, который был нужен для реализации функций по metawarc
+* *desna67_analyze.txt* (файл, полученный в результате команды `metawarc analyze desna67.ru.warc`)
 
-`metawarc metadata desna67.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
+* *desna67_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o desna67.jsonl desna67.ru.warc`)
+
+* *desna67_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output desna67_metadata.jsonl desna67.ru.warc`)
+
+* *desna67_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *desna67_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index desna67.ru.warc`)
+
+### 4. Характеристики по данным *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по metawarc
+
+`metawarc metadata --output desna67_metadata.jsonl desna67.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
 `metawarc analyze desna67.ru.warc` - анализ на обнаружение типов данных, соответствующих стандарту MIME.
 
@@ -24,9 +38,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension | size       | count |
 |-----------|------------|-------|
@@ -48,7 +62,7 @@
 | woff2     | 328994     |     6 |
 | xml       | 61328      |     6 |
 
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                               | size       | count |
 |------------------------------------|------------|-------|
@@ -74,11 +88,11 @@
 | video/mp4                          | 152004820  |     4 |
 
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://desna67.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a desna67.ru/desna67.ru.log --database desna67.ru/sitearchive-desna67.ru.db --warc-file "desna67.ru/desna67.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains desna67.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится больше всего изображений в форматах jpg и png, если не включать файлы с пустым расширением.
 
