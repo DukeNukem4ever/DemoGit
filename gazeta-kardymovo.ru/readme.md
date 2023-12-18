@@ -12,7 +12,7 @@
 
 * *gazeta-kardymovo_analyze.txt* (файл, полученный в результате команды `metawarc analyze gazeta-kardymovo.ru.warc`)
 
-* *gazeta-kardymovo_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o gazeta-kardymovo.jsonl gazeta-kardymovo.ru.warc`)
+* *gazeta-kardymovo_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o gazeta-kardymovo.jsonl gazeta-kardymovo.ru.warc`)
 
 * *gazeta-kardymovo_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output gazeta-kardymovo_metadata.jsonl gazeta-kardymovo.ru.warc`)
 
