@@ -11,7 +11,7 @@
 
 * *gagarin-gazeta_analyze.txt* (файл, полученный в результате команды `metawarc analyze gagarin-gazeta.ru.warc`)
 
-* *gagarin-gazeta_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o gagarin-gazeta.jsonl gagarin-gazeta.ru.warc`)
+* *gagarin-gazeta_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o gagarin-gazeta.jsonl gagarin-gazeta.ru.warc`)
 
 * *gagarin-gazeta_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output gagarin-gazeta_metadata.jsonl gagarin-gazeta.ru.warc`)
 
