@@ -8,7 +8,7 @@
 
 ![ArchiveReady_Desna_67](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/d720e486-5ccb-493b-a5b5-ce604530d3cf)
 
-### 3. Список файлов в репозитории:
+### 3. Список файлов в папке:
 
 * *desna67_analyze.txt* (файл, полученный в результате команды `metawarc analyze desna67.ru.warc`)
 
