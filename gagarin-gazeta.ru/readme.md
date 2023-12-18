@@ -1,15 +1,15 @@
 ## Название сайта: gagarin-gazeta.ru
 
-## 1. О чём сайт
+### 1. О чём сайт
 
 "ГЖАТСКИЙ ВЕСТНИК" - общественно-политическая газета, выпускаемая в г. Гагарин с 27 февраля 1918 года. Выходит один раз в неделю по пятницам. Основные темы — новости политической и социально-экономической жизни Гагарина, образования, культуры, медицины, спорта. Кроме этого, на страницах газеты печатаются все официальные документы администраций и совета депутатов района, города и сельских поселений.
 
-## 2. Характеристики по данным *ArchiveReady*
+### 2. Характеристики по данным *ArchiveReady*
 ![image](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/6981c6d0-c91b-4b66-8ebd-3007bb7f0aee)
 
-## 3. Характеристики по *metawarc*
+### 3. Характеристики по *metawarc*
 
-### 3.1. Код, который был нужен для реализации функций по *metawarc*
+#### 3.1. Код, который был нужен для реализации функций по *metawarc*
 
 `metawarc metadata gagarin-gazeta.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -23,9 +23,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-### 3.2. Сравнительная таблица
+#### 3.2. Сравнительная таблица
 
-#### 3.2.1 Информация по расширениям файлов
+##### 3.2.1 Информация по расширениям файлов
 
 | extension         | size      | count |
 |-------------------|-----------|-------|
@@ -61,7 +61,7 @@
 | xml               | 3960848   |  1320 |
 | zip               | 42814     |     1 |
 
-#### 3.2.2 Информация по MIME-типам данных
+##### 3.2.2 Информация по MIME-типам данных
 
 | mime                               | size      | count |
 |------------------------------------|-----------|-------|
@@ -88,11 +88,11 @@
 | text/xml; charset=UTF-8            | 4559784   |  1096 |
 | text/xml; charset=utf-8            | 3959563   |  1319 |
 
-## 4. Анализ через *wpull*
+### 4. Анализ через *wpull*
 
 `wpull http://gagarin-gazeta.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a gagarin-gazeta.ru/gagarin-gazeta.ru.log --database gagarin-gazeta.ru/sitearchive-gagarin-gazeta.ru.db --warc-file "gagarin-gazeta.ru/gagarin-gazeta.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains gagarin-gazeta.ru --concurrent 4`
 
-## 5. Выводы и интерпретации
+### 5. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится очень много файлов формата jpg и xml. 
 
