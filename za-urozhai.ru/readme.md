@@ -7,9 +7,23 @@
 ### 2. Характеристики по данным *ArchiveReady*
 ![ArchiveReady_Za_Urozhai](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/fa92fd90-25d6-47ed-967e-25c4376404c5)
 
-### 3. Характеристики по *metawarc*
+### 3. Список файлов в папке:
 
-#### 3.1. Код, который был нужен для реализации функций по *metawarc*
+* *za-urozhai_analyze.txt* (файл, полученный в результате команды `metawarc analyze za-urozhai.ru.warc`)
+
+* *za-urozhai_json.rar* (архив с json-файлом, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o za-urozhai.jsonl za-urozhai.ru.warc`)
+
+* *za-urozhai_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output za-urozhai_metadata.jsonl za-urozhai.ru.warc`)
+
+* *za-urozhai_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *za-urozhai_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index za-urozhai.ru.warc`)
+
+### 4. Характеристики по *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по *metawarc*
 
 `metawarc metadata za-urozhai.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -23,9 +37,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension | size      | count |
 |-----------|-----------|-------|
@@ -50,8 +64,7 @@
 | woff2     | 77414     |     1 |
 | xml       | 155004    |     9 |
 
-
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                               | size      | count |
 |------------------------------------|-----------|-------|
@@ -75,11 +88,11 @@
 | text/plain;charset=UTF-8           | 240       |     1 |
 | text/xml; charset=UTF-8            | 4587262   |  1135 |
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://za-urozhai.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a za-urozhai.ru/za-urozhai.ru.log --database za-urozhai.ru/sitearchive-za-urozhai.ru.db --warc-file "za-urozhai.ru/za-urozhai.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains za-urozhai.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится очень много файлов формата jpg и jpeg. Также присутствует файл с аномальным расширением, где на конце стоят символы "\%22". Это может указывать на недостаточную целость некоторых файлов. Либо они не до конца прогрузились, либо в них присутствует какая-то другая ошибка. 
 
