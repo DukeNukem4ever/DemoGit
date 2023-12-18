@@ -12,7 +12,7 @@
 
 * *desna67_analyze.txt* (файл, полученный в результате команды `metawarc analyze desna67.ru.warc`)
 
-* *desna67_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o desna67.jsonl desna67.ru.warc`)
+* *desna67_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o desna67.jsonl desna67.ru.warc`)
 
 * *desna67_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output desna67_metadata.jsonl desna67.ru.warc`)
 
