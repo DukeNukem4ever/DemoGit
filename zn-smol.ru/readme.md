@@ -7,9 +7,23 @@
 ### 2. Характеристики по данным *ArchiveReady*
 ![ArchiveReady_Zn_Smol](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/9e5d0f16-7a5e-4cb1-b34a-069d2ab8fa02)
 
-### 3. Характеристики по *metawarc*
+### 3. Список файлов в папке:
 
-#### 3.1. Код, который был нужен для реализации функций по *metawarc*
+* *zn-smol_analyze.txt* (файл, полученный в результате команды `metawarc analyze zn-smol.ru.warc`)
+
+* *zn-smol_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o zn-smol.jsonl zn-smol.ru.warc`)
+
+* *zn-smol_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output zn-smol_metadata.jsonl zn-smol.ru.warc`)
+
+* *zn-smol_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *zn-smol_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index zn-smol.ru.warc`)
+
+### 4. Характеристики по *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по *metawarc*
 
 `metawarc metadata zn-smol.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -23,9 +37,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension | size      | count |
 |-----------|-----------|-------|
@@ -48,8 +62,7 @@
 | xml       | 466017    |     5 |
 | zip       | 412813524 |    36 |
 
-
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                          | size      | count |
 |-------------------------------|-----------|-------|
@@ -75,11 +88,11 @@
 | text/xml                      | 465363    |     3 |
 | text/xml;charset=utf-8        | 888       |     1 |
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://zn-smol.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a zn-smol.ru/zn-smol.ru.log --database zn-smol.ru/sitearchive-zn-smol.ru.db --warc-file "zn-smol.ru/zn-smol.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains zn-smol.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится очень много файлов формата jpg; на втором месте стоят файлы jpeg; если не считать пустых файлов. Если рассматривать MIME-типы данных, то среди них по количеству употребления лидируют изображения в формате jpeg; на втором месте идут тексты html с кодировкой utf-8.
 
