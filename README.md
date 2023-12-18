@@ -3,9 +3,13 @@
 
 Электронная почта: artemorekhov99@gmail.com
 
+Telegram: https://t.me/dukenukem4ever
+
+VK: https://vk.com/a.orekhov99
+
 ## 1. Ссылка на коллекцию
 
-Яндекс.Диск; один архив с шестью warc-файлами: [https://disk.yandex.ru/d/5jI4nJF5XgGk2A](https://disk.yandex.ru/d/5jI4nJF5XgGk2A)
+Яндекс.Диск; один архив с шестью warc-файлами: https://disk.yandex.ru/d/5jI4nJF5XgGk2A
 
 ## 2. Краткое описание веб-сайтов
 
