@@ -8,9 +8,23 @@
 
 ![ArchiveReady_Velizhnov_67](https://github.com/DukeNukem4ever/DemoGit/assets/31654733/d2eabc9b-dd6b-4d82-a415-9bc8e53b6109)
 
-### 3. Характеристики по данным *metawarc*
+### 3. Список файлов в папке:
 
-#### 3.1. Код, который был нужен для реализации функций по metawarc
+* *velizhnov67_analyze.txt* (файл, полученный в результате команды `metawarc analyze velizhnov67.ru.warc`)
+
+* *velizhnov67_json.rar* (архив с json-файлов, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o velizhnov67.jsonl velizhnov67.ru.warc`)
+
+* *velizhnov67_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output velizhnov67_metadata.jsonl velizhnov67.ru.warc`)
+
+* *velizhnov67_stats_ext.txt* (текстовая таблица с частотой расширений, извлечённая из файла *metawarc.db* через код `metawarc stats -m exts`)
+
+* *velizhnov67_stats_mimes.txt* (текстовая таблица с частотой MIME-типов данных, извлечённая из файла *metawarc.db* с помощью кода `metawarc stats -m mimes`)
+
+* *metawarc.db* (база данных SQL с метаданными, полученная методом `metawarc index velizhnov67.ru.warc`)
+
+### 4. Характеристики по *metawarc*
+
+#### 4.1. Код, который был нужен для реализации функций по metawarc
 
 `metawarc metadata velizhnov67.ru.warc` - извлекает метаданные из ".warc"-файла; возвращает json-строки по каждому найденному файлу.
 
@@ -24,9 +38,9 @@
 
 `metawarc stats -m exts` - получение информации о частоте типов расширений данных.
 
-#### 3.2. Сравнительная таблица
+#### 4.2. Сравнительная таблица
 
-##### 3.2.1 Информация по расширениям файлов
+##### 4.2.1 Информация по расширениям файлов
 
 | extension        | size      | count |
 |------------------|-----------|-------|
@@ -59,7 +73,7 @@
 | woff2            | 167377    |     3 |
 | xml              | 107692    |     4 |
 
-##### 3.2.2 Информация по MIME-типам данных
+##### 4.2.2 Информация по MIME-типам данных
 
 | mime                                                                    | size      | count |
 |-------------------------------------------------------------------------|-----------|-------|
@@ -83,11 +97,11 @@
 | text/xml; charset=UTF-8                                                 | 3039189   |   654 |
 | video/mp4                                                               | 16785642  |     1 |
 
-### 4. Анализ через *wpull*
+### 5. Анализ через *wpull*
 
 `wpull http://velizhnov67.ru/ --strip-session-id --no-check-certificate --no-robots --span-hosts --page-requisites --sitemaps --inet4-only --timeout 20 --tries 3 --waitretry 5 --recursive --level inf --retry-connrefused --retry-dns-error --delete-after --warc-append --warc-cdx -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -d -a velizhnov67.ru/velizhnov67.ru.log --database velizhnov67.ru/sitearchive-velizhnov67.ru.db --warc-file "velizhnov67.ru/velizhnov67.ru" --warc-header "operator: No Name" --warc-header "downloaded-by: Student"  --domains velizhnov67.ru --concurrent 4`
 
-### 5. Выводы и интерпретации
+### 6. Выводы и интерпретации
 
 Как показывают сравнительные таблицы, в структуре сайта содержится больше всего изображений в форматах jpg, jpeg и png, если не включать файлы с пустым расширением.
 
