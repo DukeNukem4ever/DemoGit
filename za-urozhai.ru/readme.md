@@ -11,7 +11,7 @@
 
 * *za-urozhai_analyze.txt* (файл, полученный в результате команды `metawarc analyze za-urozhai.ru.warc`)
 
-* *za-urozhai_json.rar* (архив с json-файлом, полученный в ходе экспорта содержания страниц через `metawarc export -t content -o za-urozhai.jsonl za-urozhai.ru.warc`)
+* *za-urozhai_json.rar* (архив с json-файлом, полученным в ходе экспорта содержания страниц через `metawarc export -t content -o za-urozhai.jsonl za-urozhai.ru.warc`)
 
 * *za-urozhai_metadata.jsonl* (json-файл, полученный через команду `metawarc metadata --output za-urozhai_metadata.jsonl za-urozhai.ru.warc`)
 
