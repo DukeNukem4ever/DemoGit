@@ -71,7 +71,7 @@
 | text/plain; charset=utf-8          | 776        |     2 |
 | text/plain;charset=UTF-8           | 480        |     2 |
 | text/xml; charset=UTF-8            | 7606130    |  1740 |
-| video/mp4                          | 152004820  |     4
+| video/mp4                          | 152004820  |     4 |
 
 
 ### 4. Анализ через *wpull*
